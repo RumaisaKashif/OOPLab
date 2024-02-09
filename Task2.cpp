@@ -63,7 +63,7 @@ int main()
     w.setCapacityinml(capmil);
     cout<<"\n\nThe details are as follows:\n";
     cout<<"The company of the bottle is:"<<w.getCompany()<<endl;
-    cout<<"The color of the bottle is:"<<w.getColor()<<endl;
-    cout<<"The capacity of the bottle in l is"<<w.getCapacityinl()<<endl;
-    cout<<"The capacity of the bottle in ml is"<<w.getCapacityinmml()<<endl;
+    cout<<"The color of the bottle is: "<<w.getColor()<<endl;
+    cout<<"The capacity of the bottle in l is: "<<w.getCapacityinl()<<endl;
+    cout<<"The capacity of the bottle in ml is: "<<w.getCapacityinmml()<<endl;
 }
