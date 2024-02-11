@@ -9,24 +9,16 @@ using namespace std;
 
 bool hasSubsetSum(int arr[], int size, int targetSum)
 {
-    /* Base case: 
-    if the target sum=0, required subset has been found
-    */ 
     if (targetSum==0) 
     {
         return true;
     }
-    /* Base case: 
-    if size= 0 ||  target sum < 0, subset won't be formed
-    */ 
     if (size==0 || targetSum<0) 
     {
         return false;
     }
-    // Recursive case
     for (int i=size-1; i>=0; --i) 
     {
-    // Updating target sum
     if (targetSum>=arr[i]) 
     {
       if (hasSubsetSum(arr, i, targetSum-arr[i])) 
