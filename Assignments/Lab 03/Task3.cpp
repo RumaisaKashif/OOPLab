@@ -1,3 +1,8 @@
+/*
+Programmer: Rumaisa Kashif
+Date: 16/2/24
+Task 3
+*/
 #include <iostream>
 #include <string>
 
@@ -222,10 +227,15 @@ void deleteTask(int day, int month, Calendar &calendar)
     {
         for (int i=0;i<31;i++)
         {
-            if (day==i+1)
+            if (day==i+1 && calendar.January[i].empty()!=true)
             {
                 calendar.January[i]="\0";
                 cout<<"Task successfully deleted"<<endl;
+                break;
+            }
+            else if (day==i+1 && calendar.January[i].empty()==true)
+            {
+                cout<<"Task does not exist."<<endl;
                 break;
             }
         }
@@ -234,10 +244,15 @@ void deleteTask(int day, int month, Calendar &calendar)
     {
         for (int i=0;i<29;i++)
         {
-            if (day==i+1)
+            if (day==i+1 && calendar.February[i].empty()!=true)
             {
                 calendar.February[i]="\0";
                 cout<<"Task successfully deleted"<<endl;
+                break;
+            }
+            else if (day==i+1 && calendar.February[i].empty()==true)
+            {
+                cout<<"Task does not exist."<<endl;
                 break;
             }
         }
@@ -246,10 +261,15 @@ void deleteTask(int day, int month, Calendar &calendar)
     {
         for (int i=0;i<31;i++)
         {
-            if (day==i+1)
+            if (day==i+1 && calendar.March[i].empty()!=true)
             {
                 calendar.March[i]="\0";
                 cout<<"Task successfully deleted"<<endl;
+                break;
+            }
+            else if (day==i+1 && calendar.March[i].empty()==true)
+            {
+                cout<<"Task does not exist."<<endl;
                 break;
             }
         }
@@ -258,10 +278,15 @@ void deleteTask(int day, int month, Calendar &calendar)
     {
         for (int i=0;i<30;i++)
         {
-            if (day==i+1)
+            if (day==i+1 && calendar.April[i].empty()!=true)
             {
                 calendar.April[i]="\0";
                 cout<<"Task successfully deleted"<<endl;
+                break;
+            }
+            else if (day==i+1 && calendar.April[i].empty()==true)
+            {
+                cout<<"Task does not exist."<<endl;
                 break;
             }
         }
@@ -270,10 +295,15 @@ void deleteTask(int day, int month, Calendar &calendar)
     {
         for (int i=0;i<31;i++)
         {
-            if (day==i+1)
+            if (day==i+1 && calendar.May[i].empty()!=true)
             {
                 calendar.May[i]="\0";
                 cout<<"Task successfully deleted"<<endl;
+                break;
+            }
+            else if (day==i+1 && calendar.May[i].empty()==true)
+            {
+                cout<<"Task does not exist."<<endl;
                 break;
             }
         }
@@ -282,10 +312,15 @@ void deleteTask(int day, int month, Calendar &calendar)
     {
         for (int i=0;i<30;i++)
         {
-            if (day==i+1)
+            if (day==i+1 && calendar.June[i].empty()!=true)
             {
                 calendar.June[i]="\0";
                 cout<<"Task successfully deleted"<<endl;
+                break;
+            }
+            else if (day==i+1 && calendar.June[i].empty()==true)
+            {
+                cout<<"Task does not exist."<<endl;
                 break;
             }
         }
@@ -294,10 +329,15 @@ void deleteTask(int day, int month, Calendar &calendar)
     {
         for (int i=0;i<31;i++)
         {
-            if (day==i+1)
+            if (day==i+1 && calendar.July[i].empty()!=true)
             {
                 calendar.July[i]="\0";
                 cout<<"Task successfully deleted"<<endl;
+                break;
+            }
+            else if (day==i+1 && calendar.July[i].empty()==true)
+            {
+                cout<<"Task does not exist."<<endl;
                 break;
             }
         }
@@ -306,10 +346,15 @@ void deleteTask(int day, int month, Calendar &calendar)
     {
         for (int i=0;i<31;i++)
         {
-            if (day==i+1)
+            if (day==i+1 && calendar.August[i].empty()!=true)
             {
                 calendar.August[i]="\0";
                 cout<<"Task successfully deleted"<<endl;
+                break;
+            }
+            else if (day==i+1 && calendar.August[i].empty()==true)
+            {
+                cout<<"Task does not exist."<<endl;
                 break;
             }
         }
@@ -318,10 +363,15 @@ void deleteTask(int day, int month, Calendar &calendar)
     {
         for (int i=0;i<30;i++)
         {
-            if (day==i+1)
+            if (day==i+1 && calendar.September[i].empty()!=true)
             {
                 calendar.September[i]="\0";
                 cout<<"Task successfully deleted"<<endl;
+                break;
+            }
+            else if (day==i+1 && calendar.September[i].empty()==true)
+            {
+                cout<<"Task does not exist."<<endl;
                 break;
             }
         }
@@ -330,10 +380,15 @@ void deleteTask(int day, int month, Calendar &calendar)
     {
         for (int i=0;i<31;i++)
         {
-            if (day==i+1)
+            if (day==i+1 && calendar.October[i].empty()!=true)
             {
                 calendar.October[i]="\0";
                 cout<<"Task successfully deleted"<<endl;
+                break;
+            }
+            else if (day==i+1 && calendar.October[i].empty()==true)
+            {
+                cout<<"Task does not exist."<<endl;
                 break;
             }
         }
@@ -342,10 +397,15 @@ void deleteTask(int day, int month, Calendar &calendar)
     {
         for (int i=0;i<30;i++)
         {
-            if (day==i+1)
+            if (day==i+1 && calendar.November[i].empty()!=true)
             {
                 calendar.November[i]="\0";
                 cout<<"Task successfully deleted"<<endl;
+                break;
+            }
+            else if (day==i+1 && calendar.November[i].empty()==true)
+            {
+                cout<<"Task does not exist."<<endl;
                 break;
             }
         }
@@ -354,10 +414,15 @@ void deleteTask(int day, int month, Calendar &calendar)
     {
         for (int i=0;i<31;i++)
         {
-            if (day==i+1)
+            if (day==i+1 && calendar.December[i].empty()!=true)
             {
                 calendar.December[i]="\0";
                 cout<<"Task successfully deleted"<<endl;
+                break;
+            }
+            else if (day==i+1 && calendar.December[i].empty()==true)
+            {
+                cout<<"Task does not exist."<<endl;
                 break;
             }
         }
