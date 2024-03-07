@@ -88,6 +88,9 @@ class Payment
     { 
         return amount; 
     }
+    void setAmount(int s){
+        amount=s;
+    }
 };
 
 class Order 
@@ -106,14 +109,14 @@ public:
     void displayOrder() 
     {
         cout<<"Ordered items:"<<endl;
-        int sum=0;
+        double sum=0;
         for (int i=0; i<numItems; i++) 
         {
             cout<<"Item no. "<<i+1<<" "<< items[i].getName()<<"\tPKR "<<items[i].getPrice()<<endl;
             sum+=items[i].getPrice();
         }
-        cout<<"Total bill: PKR "<<sum<<endl;
-        cout<<"Total payment: PKR "<<payment.getAmount()<<endl;
+        payment.setAmount(sum);
+        cout<<"Total Amount: PKR "<<payment.getAmount()<<endl;
     }
 };
 
