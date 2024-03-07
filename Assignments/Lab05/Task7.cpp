@@ -35,7 +35,7 @@ public:
     {
         if (count<10) 
         {
-            items[count++] = item;
+            items[count++]=item;
         }
     }
     void removeItem(int removeIndex) 
@@ -48,7 +48,7 @@ public:
             count--;
         }
         else{
-            for (int i = removeIndex; i < count - 1; i++) 
+            for (int i = removeIndex; i < count-1; i++) 
             {
                 items[i]=items[i+1];
             }
@@ -156,9 +156,6 @@ int main()
     menu.addItem(i6);
 
     Restaurant restaurant1(menu);
-    restaurant1.displayMenu();
-    menu.removeItem(5);
-    cout<<"Displaying updated menu..."<<endl;
     restaurant1.displayMenu();
     MenuItem orderup[]={i1, i2, i4};
     int count= sizeof(orderup)/sizeof(orderup[0]);
