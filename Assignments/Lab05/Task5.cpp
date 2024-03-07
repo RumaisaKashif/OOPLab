@@ -130,14 +130,12 @@ class Car{
 };
 int main()
 {
-    //creating objects of the classes
     cout<<"Rumaisa Kashif, 23K-0744, Q5"<<endl;
     Wheels myWheels(4,"Alloy");
     Headlights* myHeadlights= new Headlights(2, "RnB", "Warm");
     Steering mySteering("Toyota");
     Engine* myEngine= new Engine("V8", 300);
-
-
+    
     Car myCar(myEngine, myWheels, myHeadlights, mySteering);
     myCar.displayInfo();
     return 0;
